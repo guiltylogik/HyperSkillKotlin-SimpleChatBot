@@ -26,5 +26,7 @@ fun main() {
 
     // read a number and count to it here
 
+    for (i in 0..readLine()!!.toInt()) println("$i!")
+
     println("Completed, have a nice day!")
 }
