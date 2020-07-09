@@ -15,9 +15,10 @@ fun main(args: Array<String>) {
         repeat(n) {
             val num = scanner.nextInt()
 
-            if ((b < a && num > b) && b != a) {
+            if (num in b..a) {
                 b = num
             } else if (num > a) {
+                b = a
                 a = num
             }
         }
